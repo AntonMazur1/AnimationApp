@@ -30,8 +30,8 @@ class MainViewController: UIViewController {
         animationView.animation = animationPresets.preset
         animationView.curve = animationPresets.curve
         animationView.force = CGFloat(animationPresets.force)
-        animationView.duration = animationPresets.duration
-        animationView.delay = CGFloat(animationPresets.delay)
+        animationView.duration = CGFloat(animationPresets.duration)
+        animationView.delay = animationPresets.delay
         animationView.animate()
     }
     

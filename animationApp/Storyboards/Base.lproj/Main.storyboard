@@ -33,6 +33,11 @@
                                     <constraint firstItem="jfp-55-TDu" firstAttribute="top" secondItem="OCR-ON-aKg" secondAttribute="top" constant="10" id="eYv-km-Bgn"/>
                                     <constraint firstItem="jfp-55-TDu" firstAttribute="leading" secondItem="OCR-ON-aKg" secondAttribute="leading" constant="8" id="mkR-4W-9q0"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLK-0i-0KY" customClass="SpringButton" customModule="SpringAnimation">
                                 <rect key="frame" x="182.5" y="791" width="49.5" height="31"/>

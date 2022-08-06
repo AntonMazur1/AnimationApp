@@ -72,35 +72,11 @@ class DataStorage {
         "easeInOutBack"
     ]
     
-    let forces = [
-        1,
-        2,
-        3,
-        4,
-        5
-    ]
+    let forces = Array(1...5)
     
-    let durations = [
-        1.2,
-        1.4,
-        1.6,
-        1.8,
-        2,
-        2.3
-    ]
+    let durations = Array(1...4)
     
-    let delays = [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10
-    ]
+    let delays = [0.30, 0.40, 0.50, 0.60]
     
     private init() {}
 }
