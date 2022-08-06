@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89314A7D289E65520057AC19 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 89314A7C289E65520057AC19 /* SpringAnimation */; };
 		8964D127289D5A4300D7B7C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8964D126289D5A4300D7B7C0 /* AppDelegate.swift */; };
 		8964D129289D5A4300D7B7C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8964D128289D5A4300D7B7C0 /* SceneDelegate.swift */; };
 		8964D12B289D5A4300D7B7C0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8964D12A289D5A4300D7B7C0 /* MainViewController.swift */; };
@@ -36,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89314A7D289E65520057AC19 /* SpringAnimation in Frameworks */,
 				8964D13C289D5B6900D7B7C0 /* SpringAnimation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +143,7 @@
 			name = animationApp;
 			packageProductDependencies = (
 				8964D13B289D5B6900D7B7C0 /* SpringAnimation */,
+				89314A7C289E65520057AC19 /* SpringAnimation */,
 			);
 			productName = animationApp;
 			productReference = 8964D123289D5A4300D7B7C0 /* animationApp.app */;
@@ -172,6 +175,7 @@
 			mainGroup = 8964D11A289D5A4300D7B7C0;
 			packageReferences = (
 				8964D13A289D5B6900D7B7C0 /* XCRemoteSwiftPackageReference "SpringAnimation" */,
+				89314A7B289E65520057AC19 /* XCRemoteSwiftPackageReference "SpringAnimation" */,
 			);
 			productRefGroup = 8964D124289D5A4300D7B7C0 /* Products */;
 			projectDirPath = "";
@@ -424,6 +428,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		89314A7B289E65520057AC19 /* XCRemoteSwiftPackageReference "SpringAnimation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LexDeBash/SpringAnimation.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		8964D13A289D5B6900D7B7C0 /* XCRemoteSwiftPackageReference "SpringAnimation" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/LexDeBash/SpringAnimation.git";
@@ -435,6 +447,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		89314A7C289E65520057AC19 /* SpringAnimation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89314A7B289E65520057AC19 /* XCRemoteSwiftPackageReference "SpringAnimation" */;
+			productName = SpringAnimation;
+		};
 		8964D13B289D5B6900D7B7C0 /* SpringAnimation */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8964D13A289D5B6900D7B7C0 /* XCRemoteSwiftPackageReference "SpringAnimation" */;
