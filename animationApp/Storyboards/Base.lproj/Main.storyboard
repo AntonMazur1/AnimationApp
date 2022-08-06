@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="animationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OCR-ON-aKg" customClass="SpringView" customModule="SpringAnimation">
+                                <rect key="frame" x="87.5" y="84" width="239" height="179"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfp-55-TDu">
+                                        <rect key="frame" x="8" y="10" width="221" height="159"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="jfp-55-TDu" secondAttribute="trailing" constant="10" id="7Hy-L5-eEe"/>
+                                    <constraint firstAttribute="bottom" secondItem="jfp-55-TDu" secondAttribute="bottom" constant="10" id="JV1-PV-JF5"/>
+                                    <constraint firstItem="jfp-55-TDu" firstAttribute="top" secondItem="OCR-ON-aKg" secondAttribute="top" constant="10" id="eYv-km-Bgn"/>
+                                    <constraint firstItem="jfp-55-TDu" firstAttribute="leading" secondItem="OCR-ON-aKg" secondAttribute="leading" constant="8" id="mkR-4W-9q0"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLK-0i-0KY" customClass="SpringButton" customModule="SpringAnimation">
+                                <rect key="frame" x="182.5" y="791" width="49.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Run">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="runAnimationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mbu-uf-NVW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OCR-ON-aKg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CDS-dq-akO"/>
+                            <constraint firstItem="OCR-ON-aKg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="JMg-jq-0RV"/>
+                            <constraint firstItem="OLK-0i-0KY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wh1-Zn-gc7"/>
+                            <constraint firstItem="OCR-ON-aKg" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="Y10-ek-TmV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OLK-0i-0KY" secondAttribute="bottom" constant="40" id="ZzM-vt-gcV"/>
+                            <constraint firstItem="OCR-ON-aKg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.577295" id="t98-tu-UJh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationPresetsLabel" destination="jfp-55-TDu" id="M8g-LP-b5V"/>
+                        <outlet property="animationView" destination="OCR-ON-aKg" id="bcj-At-v4c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="84.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
