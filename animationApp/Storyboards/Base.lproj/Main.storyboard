@@ -40,7 +40,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLK-0i-0KY" customClass="SpringButton" customModule="SpringAnimation">
-                                <rect key="frame" x="182.5" y="791" width="49.5" height="31"/>
+                                <rect key="frame" x="107.5" y="791" width="199" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Run">
                                     <backgroundConfiguration key="background">
@@ -55,6 +55,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="OLK-0i-0KY" firstAttribute="width" secondItem="jfp-55-TDu" secondAttribute="width" multiplier="0.9" id="6lU-45-pwu"/>
                             <constraint firstItem="OCR-ON-aKg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CDS-dq-akO"/>
                             <constraint firstItem="OCR-ON-aKg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="JMg-jq-0RV"/>
                             <constraint firstItem="OLK-0i-0KY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wh1-Zn-gc7"/>

@@ -36,7 +36,7 @@ class MainViewController: UIViewController {
     }
     
     private func setupLabel(with animationPresets: AnimationModel) {
-        animationPresetsLabel.text = "Preset: \(animationPresets.preset)\nCurve: \(animationPresets.curve)\nForce: \(animationPresets.force)\nDuration: \(animationPresets.duration)\nDelay: \(animationPresets.delay)"
+        animationPresetsLabel.text = animation.description
     }
 }
 

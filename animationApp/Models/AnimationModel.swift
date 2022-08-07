@@ -14,20 +14,17 @@ struct AnimationModel {
     let duration: Int
     let delay: Double
     
+    var description: String {
+        "Preset: \(preset)\nCurve: \(curve)\nForce: \(force)\nDuration: \(duration)\nDelay: \(delay)"
+    }
+    
     static func getAnimation() -> AnimationModel {
-        guard let preset = DataStorage.shared.animations.randomElement(),
-              let curve = DataStorage.shared.curves.randomElement(),
-              let force = DataStorage.shared.forces.randomElement(),
-              let duration = DataStorage.shared.durations.randomElement(),
-              let delay = DataStorage.shared.delays.randomElement()
-        else { return AnimationModel(preset: "", curve: "", force: 0, duration: 0, delay: 0) }
-        
-        return AnimationModel(
-            preset: preset,
-            curve: curve,
-            force: force,
-            duration: duration,
-            delay: delay
+        AnimationModel(
+            preset: DataStorage.shared.animations.randomElement() ?? "",
+            curve: DataStorage.shared.curves.randomElement() ?? "",
+            force: (1...5).randomElement() ?? 1,
+            duration: (1...4).randomElement() ?? 1,
+            delay: Array(stride(from: 0, to: 1, by: 0.2)).randomElement() ?? 1
         )
     }
 }
