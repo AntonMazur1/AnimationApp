@@ -10,21 +10,27 @@ import Foundation
 struct AnimationModel {
     let preset: String
     let curve: String
-    let force: Int
-    let duration: Int
+    let force: Double
+    let duration: Double
     let delay: Double
     
     var description: String {
-        "Preset: \(preset)\nCurve: \(curve)\nForce: \(force)\nDuration: \(duration)\nDelay: \(delay)"
+        """
+        Preset: \(preset)
+        Curve: \(curve)
+        Force: \(String(format: "%.02f", force))
+        Duration: \(String(format: "%.02f", duration))
+        Delay: \(String(format: "%.02f", delay))
+        """
     }
     
     static func getAnimation() -> AnimationModel {
         AnimationModel(
-            preset: DataStorage.shared.animations.randomElement() ?? "",
-            curve: DataStorage.shared.curves.randomElement() ?? "",
-            force: (1...5).randomElement() ?? 1,
-            duration: (1...4).randomElement() ?? 1,
-            delay: Array(stride(from: 0, to: 1, by: 0.2)).randomElement() ?? 1
+            preset: DataStorage.shared.animations.randomElement()?.rawValue ?? "pop",
+            curve: DataStorage.shared.curves.randomElement()?.rawValue ?? "easeIn",
+            force: Double.random(in: 1...3),
+            duration: Double.random(in: 1...2),
+            delay: Double.random(in: 0.1...0.5)
         )
     }
 }
